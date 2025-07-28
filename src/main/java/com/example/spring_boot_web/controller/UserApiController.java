@@ -18,7 +18,8 @@ public class UserApiController {
             // HttpEntity http
     ){
         log.info("{}", userRequest);
-        return userRequest;
+        throw new NumberFormatException("");
+        //return userRequest;
     }
 
     @GetMapping("/hello")
